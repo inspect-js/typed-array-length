@@ -1,0 +1,43 @@
+{
+	"name": "typed-array-length",
+	"version": "0.0.0",
+	"description": "Robustly get the length of a Typed Array",
+	"main": "index.js",
+    "exports": {
+      ".": [
+        {
+          ".": "./index.js"
+        },
+        "./index.js"
+      ]
+    },
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/inspect-js/typed-array-length.git"
+	},
+	"keywords": [
+		"typed",
+		"array",
+		"length",
+		"robust",
+		"es",
+		"Int8Array",
+		"Uint8Array",
+		"Uint8ClampedArray",
+		"Int16Array",
+		"Uint16Array",
+		"Int32Array",
+		"Uint32Array",
+		"Float32Array",
+		"Float64Array"
+	],
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/inspect-js/typed-array-length/issues"
+	},
+	"homepage": "https://github.com/inspect-js/typed-array-length#readme"
+}
