@@ -3,16 +3,18 @@
 	"version": "0.0.0",
 	"description": "Robustly get the length of a Typed Array",
 	"main": "index.js",
-    "exports": {
-      ".": [
-        {
-          ".": "./index.js"
-        },
-        "./index.js"
-      ]
-    },
+	"exports": {
+		".": [
+			{
+				".": "./index.js"
+			},
+			"./index.js"
+		]
+	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"version": "auto-changelog && git add CHANGELOG.md",
+		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
 	},
 	"repository": {
 		"type": "git",
@@ -39,5 +41,15 @@
 	"bugs": {
 		"url": "https://github.com/inspect-js/typed-array-length/issues"
 	},
-	"homepage": "https://github.com/inspect-js/typed-array-length#readme"
+	"homepage": "https://github.com/inspect-js/typed-array-length#readme",
+	"devDependencies": {
+		"auto-changelog": "^1.16.2"
+	},
+	"auto-changelog": {
+		"output": "CHANGELOG.md",
+		"template": "keepachangelog",
+		"unreleased": false,
+		"commitLimit": false,
+		"backfillLimit": false
+	}
 }
