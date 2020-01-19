@@ -13,6 +13,7 @@
 	},
 	"scripts": {
 		"pretest": "npm run lint",
+		"prelint": "evalmd README.md",
 		"lint": "eslint .",
 		"tests-only": "node test",
 		"test": "npm run tests-only",
@@ -53,6 +54,7 @@
 		"@ljharb/eslint-config": "^15.1.0",
 		"auto-changelog": "^1.16.2",
 		"eslint": "^6.8.0",
+		"evalmd": "^0.0.19",
 		"foreach": "^2.0.5",
 		"make-arrow-function": "^1.1.0",
 		"make-generator-function": "^1.1.0",
