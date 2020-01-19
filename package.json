@@ -6,7 +6,7 @@
 	"exports": {
 		".": [
 			{
-				".": "./index.js"
+				"default": "./index.js"
 			},
 			"./index.js"
 		]
