@@ -68,8 +68,8 @@
 		"backfillLimit": false
 	},
 	"dependencies": {
-		"es-abstract": "^1.17.2",
-		"is-typed-array": "^1.1.1"
+		"es-abstract": "^1.17.4",
+		"is-typed-array": "^1.1.2"
 	},
 	"testling": {
 		"files": "test/index.js"
