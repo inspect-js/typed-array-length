@@ -69,7 +69,7 @@
 	},
 	"dependencies": {
 		"es-abstract": "^1.17.4",
-		"is-typed-array": "^1.1.2"
+		"is-typed-array": "^1.1.3"
 	},
 	"testling": {
 		"files": "test/index.js"
