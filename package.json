@@ -56,8 +56,9 @@
 		"eslint": "^6.8.0",
 		"evalmd": "^0.0.19",
 		"foreach": "^2.0.5",
-		"make-arrow-function": "^1.1.0",
-		"make-generator-function": "^1.1.0",
+		"make-arrow-function": "^1.2.0",
+		"make-generator-function": "^2.0.0",
+		"object-inspect": "^1.7.0",
 		"tape": "^5.0.0-next.4"
 	},
 	"auto-changelog": {

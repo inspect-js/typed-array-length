@@ -3,9 +3,10 @@
 var test = require('tape');
 var typedArrayLength = require('../');
 var IsCallable = require('es-abstract/2019/IsCallable');
-var genFn = require('make-generator-function');
+var generators = require('make-generator-function')();
 var arrowFn = require('make-arrow-function')();
 var forEach = require('foreach');
+var inspect = require('object-inspect');
 
 var typedArrayNames = [
 	'Int8Array',
@@ -57,8 +58,10 @@ test('Functions', function (t) {
 	t.end();
 });
 
-test('Generators', { skip: !genFn }, function (t) {
-	t.equal(false, typedArrayLength(genFn), 'generator function is not typed array');
+test('Generators', { skip: generators.length === 0 }, function (t) {
+	forEach(generators, function (genFn) {
+		t.equal(false, typedArrayLength(genFn), 'generator function ' + inspect(genFn) + ' is not typed array');
+	});
 	t.end();
 });
 
