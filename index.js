@@ -1,7 +1,7 @@
 'use strict';
 
 var forEach = require('foreach');
-var callBind = require('es-abstract/helpers/callBind');
+var callBind = require('call-bind');
 
 var typedArrays = [
 	'Float32Array',

@@ -2,7 +2,7 @@
 
 var test = require('tape');
 var typedArrayLength = require('../');
-var IsCallable = require('es-abstract/2019/IsCallable');
+var isCallable = require('is-callable');
 var generators = require('make-generator-function')();
 var arrowFn = require('make-arrow-function')();
 var forEach = require('foreach');
@@ -73,7 +73,7 @@ test('Arrow functions', { skip: !arrowFn }, function (t) {
 test('Typed Arrays', function (t) {
 	forEach(typedArrayNames, function (typedArray) {
 		var TypedArray = global[typedArray];
-		if (IsCallable(TypedArray)) {
+		if (isCallable(TypedArray)) {
 			var length = 10;
 			var arr = new TypedArray(length);
 			t.equal(typedArrayLength(arr), length, 'new ' + typedArray + '(10) is typed array of length ' + length);
