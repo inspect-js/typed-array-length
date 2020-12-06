@@ -15,10 +15,11 @@
 	"scripts": {
 		"pretest": "npm run lint",
 		"prelint": "evalmd README.md",
-		"lint": "eslint .",
-		"tests-only": "node test",
-		"test": "npm run tests-only",
-		"posttest": "npx aud --production",
+		"lint": "eslint --ext=js,mjs .",
+		"tests-only": "nyc tape 'test/**/*.js'",
+		"test:harmony": "nyc node --harmony --es-staging test",
+		"test": "npm run tests-only && npm run test:harmony",
+		"posttest": "aud --production",
 		"version": "auto-changelog && git add CHANGELOG.md",
 		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
 	},
@@ -60,6 +61,7 @@
 		"foreach": "^2.0.5",
 		"make-arrow-function": "^1.2.0",
 		"make-generator-function": "^2.0.0",
+		"nyc": "^10.3.2",
 		"object-inspect": "^1.7.0",
 		"tape": "^5.0.0-next.5"
 	},
