@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.3](https://github.com/inspect-js/typed-array-length/compare/v1.0.2...v1.0.3) - 2020-12-05
+
+### Commits
+
+- [Tests] migrate tests to Github Actions [`a578b83`](https://github.com/inspect-js/typed-array-length/commit/a578b83e68055c1e7c7120bc4583e1d6926fc268)
+- [meta] avoid publishing github workflows [`f064a4b`](https://github.com/inspect-js/typed-array-length/commit/f064a4bf9090202154249d969be0799c34804ad4)
+- [Tests] run `nyc` on all tests [`69b841e`](https://github.com/inspect-js/typed-array-length/commit/69b841e43042358c71c3290342514b6d107f08d1)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `object-inspect`, `tape` [`4594e83`](https://github.com/inspect-js/typed-array-length/commit/4594e83250579cdbff870aa951e7af56ca169489)
+- [actions] add "Allow Edits" workflow [`81e953b`](https://github.com/inspect-js/typed-array-length/commit/81e953ba6b3f59c5657e0d17fa1e7619b94891f5)
+- [Deps] update `is-typed-array`; use `call-bind` instead of `es-abstract` [`e7da56b`](https://github.com/inspect-js/typed-array-length/commit/e7da56b3c03b7f0db9bb110444ec1ccf19d7e9f9)
+- [readme] remove travis badge [`6d610d8`](https://github.com/inspect-js/typed-array-length/commit/6d610d83cb78ac5286c5ca273f4b3c7289f7686e)
+- [actions] switch Automatic Rebase workflow to `pull_request_target` event [`2d0ad64`](https://github.com/inspect-js/typed-array-length/commit/2d0ad644a11f754e61b49d327fdf891605abbe58)
+
 ## [v1.0.2](https://github.com/inspect-js/typed-array-length/compare/v1.0.1...v1.0.2) - 2020-04-22
 
 ### Commits
