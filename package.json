@@ -73,8 +73,8 @@
 		"hideCredit": true
 	},
 	"dependencies": {
-		"call-bind": "^1.0.0",
-		"is-typed-array": "^1.1.4"
+		"call-bind": "^1.0.2",
+		"is-typed-array": "^1.1.8"
 	},
 	"testling": {
 		"files": "test/index.js"
