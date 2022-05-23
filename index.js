@@ -1,6 +1,6 @@
 'use strict';
 
-var forEach = require('foreach');
+var forEach = require('for-each');
 var callBind = require('call-bind');
 
 var typedArrays = [
