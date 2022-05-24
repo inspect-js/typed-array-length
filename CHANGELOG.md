@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.4](https://github.com/inspect-js/typed-array-length/compare/v1.0.3...v1.0.4) - 2022-05-23
+
+### Commits
+
+- [actions] reuse common workflows [`dfd4a37`](https://github.com/inspect-js/typed-array-length/commit/dfd4a37d851a28e3d74d892a69874e02f2e58c37)
+- [meta] use `npmignore` to autogenerate an npmignore file [`a837e80`](https://github.com/inspect-js/typed-array-length/commit/a837e80d4029f26785ab9f3aa571ca782ac8e851)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `is-callable`, `object-inspect`, `tape` [`7b05a87`](https://github.com/inspect-js/typed-array-length/commit/7b05a8772af399e52bb448618a246cd34d3e3273)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `object-inspect`, `tape` [`c495f6e`](https://github.com/inspect-js/typed-array-length/commit/c495f6e050a4a7463a82c9195f31f44cf2760945)
+- [meta] simplify "exports" [`e42a6b6`](https://github.com/inspect-js/typed-array-length/commit/e42a6b6b0dc243fce32df20a75a7962782ef2a83)
+- [Fix] ensure `for-each` dependency is properly listed [`8ec761c`](https://github.com/inspect-js/typed-array-length/commit/8ec761ca56c13927281d626958a2f55211e14f45)
+- [Deps] update `call-bind`, `is-typed-array` [`2cc173a`](https://github.com/inspect-js/typed-array-length/commit/2cc173a4216e167db896bea7b8e03edf8b2d3833)
+- [meta] add `safe-publish-latest` [`e8e3afa`](https://github.com/inspect-js/typed-array-length/commit/e8e3afa431ce98bbdbb68c9f8e3c029cc5128c6c)
+- [Deps] update `is-typed-array` [`cd8084d`](https://github.com/inspect-js/typed-array-length/commit/cd8084db59b734ac4519b6d47f96233b6f73b1a6)
+
 ## [v1.0.3](https://github.com/inspect-js/typed-array-length/compare/v1.0.2...v1.0.3) - 2020-12-05
 
 ### Commits
