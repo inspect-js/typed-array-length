@@ -77,7 +77,7 @@
 	"dependencies": {
 		"call-bind": "^1.0.2",
 		"for-each": "^0.3.3",
-		"is-typed-array": "^1.1.9"
+		"is-typed-array": "^1.1.10"
 	},
 	"testling": {
 		"files": "test/index.js"
