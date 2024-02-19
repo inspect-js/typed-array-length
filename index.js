@@ -1,7 +1,9 @@
 'use strict';
 
-var forEach = require('for-each');
 var callBind = require('call-bind');
+var forEach = require('for-each');
+var gOPD = require('gopd');
+var hasProto = require('has-proto')();
 
 var typedArrays = [
 	'Float32Array',
@@ -18,8 +20,6 @@ var typedArrays = [
 ];
 
 var getters = {};
-var hasProto = [].__proto__ === Array.prototype; // eslint-disable-line no-proto
-var gOPD = Object.getOwnPropertyDescriptor;
 var oDP = Object.defineProperty;
 if (gOPD) {
 	var getLength = function (x) {
