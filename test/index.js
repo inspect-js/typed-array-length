@@ -7,20 +7,7 @@ var generators = require('make-generator-function')();
 var arrowFn = require('make-arrow-function')();
 var forEach = require('for-each');
 var inspect = require('object-inspect');
-
-var typedArrayNames = [
-	'Int8Array',
-	'Uint8Array',
-	'Uint8ClampedArray',
-	'Int16Array',
-	'Uint16Array',
-	'Int32Array',
-	'Uint32Array',
-	'Float32Array',
-	'Float64Array',
-	'BigInt64Array',
-	'BigUint64Array'
-];
+var typedArrayNames = require('possible-typed-array-names');
 
 test('not arrays', function (t) {
 	t.test('non-number/string primitives', function (st) {

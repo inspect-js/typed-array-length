@@ -79,7 +79,8 @@
 		"for-each": "^0.3.3",
 		"gopd": "^1.0.1",
 		"has-proto": "^1.0.3",
-		"is-typed-array": "^1.1.13"
+		"is-typed-array": "^1.1.13",
+		"possible-typed-array-names": "^1.0.0"
 	},
 	"testling": {
 		"files": "test/index.js"

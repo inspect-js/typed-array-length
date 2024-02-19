@@ -4,20 +4,7 @@ var callBind = require('call-bind');
 var forEach = require('for-each');
 var gOPD = require('gopd');
 var hasProto = require('has-proto')();
-
-var typedArrays = [
-	'Float32Array',
-	'Float64Array',
-	'Int8Array',
-	'Int16Array',
-	'Int32Array',
-	'Uint8Array',
-	'Uint8ClampedArray',
-	'Uint16Array',
-	'Uint32Array',
-	'BigInt64Array',
-	'BigUint64Array'
-];
+var typedArrays = require('possible-typed-array-names');
 
 var getters = {};
 var oDP = Object.defineProperty;
