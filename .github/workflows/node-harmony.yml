@@ -10,10 +10,3 @@ jobs:
       type: minors
       command: npm run test:harmony
       skip-ls-check: true
-
-  node:
-    name: 'node: harmony'
-    needs: [tests]
-    runs-on: ubuntu-latest
-    steps:
-      - run: 'echo tests completed'
