@@ -12,3 +12,34 @@ jobs:
       range: '>= 20'
       type: minors
       command: npm run tests-only
+
+  no-proto:
+    name: 'node, --disable-proto=delete'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@v2
+        with:
+          disable-sudo: true
+          egress-policy: audit
+          allowed-endpoints: >
+            github.com:443
+            raw.githubusercontent.com:443
+            nodejs.org:443
+            iojs.org:443
+            registry.npmjs.org:443
+            actions-results-receiver-production.githubapp.com:443
+
+      - uses: actions/checkout@v4
+        with:
+          show-progress: false
+      - uses: ljharb/actions/node/install@main
+      - run: NODE_OPTIONS=--disable-proto=delete npm run tests-only
+      - uses: codecov/codecov-action@v3.1.5
+
+  finisher:
+    needs: [tests, no-proto]
+    name: 'node >= 20'
+    runs-on: ubuntu-latest
+    steps:
+      - run: true
