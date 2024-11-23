@@ -1,6 +1,6 @@
 {
 	"name": "typed-array-length",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "Robustly get the length of a Typed Array",
 	"main": "index.js",
 	"exports": {
