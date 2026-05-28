@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.8](https://github.com/inspect-js/typed-array-length/compare/v1.0.7...v1.0.8) - 2026-05-28
+
+### Commits
+
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`; migrate to flat config [`24ae7de`](https://github.com/inspect-js/typed-array-length/commit/24ae7de57fa5e3f3da07b80a3cf78c73f0af4327)
+- [Dev Deps] update `@arethetypeswrong/cli`, `@ljharb/eslint-config`, `@ljharb/tsconfig`, `@types/tape`, `eslint`, `make-generator-function`, `npmignore`, `object-inspect` [`157fbce`](https://github.com/inspect-js/typed-array-length/commit/157fbce5cfaa4ab63492014fc13a2a70efd1f9fe)
+- [types] improve types [`9580efa`](https://github.com/inspect-js/typed-array-length/commit/9580efac65f3728f65f679e3380e29522428de39)
+- [Deps] update `call-bind`, `for-each`, `is-typed-array`, `possible-typed-array-names`, `reflect.getprototypeof` [`0b6c478`](https://github.com/inspect-js/typed-array-length/commit/0b6c478a07e57d883b7ea7c379f81c863aebc442)
+- [Deps] update `call-bind`, `gopd`, `is-typed-array`, `reflect.getprototypeof` [`25825a3`](https://github.com/inspect-js/typed-array-length/commit/25825a3b562f42c93e2ab93bfedf8329ab4c76e1)
+- [Dev Deps] update `@ljharb/eslint-config`, `auto-changelog`, `eslint` [`ee0f33d`](https://github.com/inspect-js/typed-array-length/commit/ee0f33d09047d1b9680b18849bc51c20d96761e3)
+- [Dev Deps] update `@arethetypeswrong/cli`, `@ljharb/tsconfig`, `@types/tape` [`075f435`](https://github.com/inspect-js/typed-array-length/commit/075f435ba8aa79679a063c37681a6173a1cbd1b7)
+- [Dev Deps] update `eslint` [`a16cdcc`](https://github.com/inspect-js/typed-array-length/commit/a16cdcc8dfcf3612cf64238a0e2685dfc1cbb6c1)
+
 ## [v1.0.7](https://github.com/inspect-js/typed-array-length/compare/v1.0.6...v1.0.7) - 2024-11-22
 
 ### Fixed
