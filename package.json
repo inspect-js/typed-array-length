@@ -89,12 +89,12 @@
 		"hideCredit": true
 	},
 	"dependencies": {
-		"call-bind": "^1.0.8",
-		"for-each": "^0.3.3",
+		"call-bind": "^1.0.9",
+		"for-each": "^0.3.5",
 		"gopd": "^1.2.0",
-		"is-typed-array": "^1.1.14",
-		"possible-typed-array-names": "^1.0.0",
-		"reflect.getprototypeof": "^1.0.8"
+		"is-typed-array": "^1.1.15",
+		"possible-typed-array-names": "^1.1.0",
+		"reflect.getprototypeof": "^1.0.10"
 	},
 	"testling": {
 		"files": "test/index.js"
